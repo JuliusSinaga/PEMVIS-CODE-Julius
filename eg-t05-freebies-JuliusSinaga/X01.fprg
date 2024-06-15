@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="juliu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-03 08:28:29 PM"/>
+        <attribute name="created" value="anVsaXU7S0FJU0FSOzIwMjMtMTEtMDM7MDg6MTY6MzkgUE07MjI3OQ=="/>
+        <attribute name="edited" value="anVsaXU7S0FJU0FSOzIwMjMtMTEtMDM7MDg6Mjg6MjkgUE07MTsyMzg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="murah, harga, total" type="Real" array="False" size=""/>
+            <assign variable="total" expression="0"/>
+            <assign variable="murah" expression="9999"/>
+            <do expression="harga != 0">
+                <input variable="harga"/>
+                <if expression="harga = 0">
+                    <then/>
+                    <else>
+                        <if expression="harga &lt; murah">
+                            <then>
+                                <assign variable="murah" expression="harga"/>
+                            </then>
+                            <else>
+                                <assign variable="harga" expression="harga"/>
+                            </else>
+                        </if>
+                        <assign variable="total" expression="total + harga"/>
+                    </else>
+                </if>
+            </do>
+            <if expression="total &gt; 100">
+                <then>
+                    <assign variable="total" expression="total - murah"/>
+                </then>
+                <else>
+                    <assign variable="total" expression="total"/>
+                </else>
+            </if>
+            <output expression="ToFixed(total,2)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
