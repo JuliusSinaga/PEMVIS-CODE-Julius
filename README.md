@@ -1,2 +1,2 @@
 # Announcement
-Source code yang telah saya kerjakan dalam praktikun dan ujian mata kuliah Pemrograman Visual(PEMVIS).
+Source code ini merupakan source code yang telah saya kerjakan selama mengikuti praktikum dan ujian mata kuliah Pemrograman Visual(PEMVIS).
